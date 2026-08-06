@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用專業空拍賦能企業影像新價值 | 無人機整合解決方案專家</title>
+    <meta name="description" content="頂級無人機整合解決方案。透過專業空拍、無人機考照教學與高品質影像後製，協助企業、品牌與個人打造更具競爭力的商業影像。">
+    <meta name="keywords" content="空拍攝影, 無人機考照, 影像後製, 商業攝影, 企業影像, Drone, Aerial Cinematography">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="用專業空拍賦能企業影像新價值 | 無人機整合解決方案">
+    <meta property="og:description" content="頂級無人機整合解決方案。提供專業空拍、無人機考照教學與高品質影像後製服務。">
+    <meta property="og:image" content="https://placehold.co/1200x630/2563EB/FFFFFF?text=Drone+Solutions+Expert">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="用專業空拍賦能企業影像新價值">
+    <meta property="twitter:description" content="頂級無人機整合解決方案。提供專業空拍、考照教學與影像後製。">
+    
+    <!-- Schema.org for Local Business / Professional Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "無人機整合解決方案專家",
+      "image": "https://placehold.co/800x800/2563EB/FFFFFF?text=Logo",
+      "description": "頂級無人機整合解決方案。透過專業空拍、無人機考照教學與高品質影像後製，協助企業、品牌與個人打造更具競爭力的商業影像。",
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS with Custom Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0A6CFF',
+                            purple: '#38B6FF',
+                            green: '#22C55E',
+                            teal: '#00BFA6',
+                            orange: '#FF7A00',
+                            red: '#FF3B30',
+                            yellow: '#FFC107',
+                            dark: '#0A0F14',
+                            dark2: '#1A1F29',
+                            cool: '#2E3642',
+                            bg: '#FFFFFF',
+                            slate: '#F8FAFC',
+                            lightBlue: '#EFF6FF'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'mesh-light': 'radial-gradient(at 40% 20%, hsla(221,100%,74%,0.15) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(262,83%,74%,0.15) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(221,100%,74%,0.1) 0px, transparent 50%)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Resets & Global Styles */
+        body {
+            background-color: #FFFFFF;
+            color: #0A0F14;
+            overflow-x: hidden;
+        }
+
+        /* Utility for text gradients */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #0A6CFF, #38B6FF);
+        }
+
+        /* Glassmorphism Classes */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(10, 108, 255, 0.08);
+            border-color: rgba(10, 108, 255, 0.3);
+        }
+
+        /* Advanced Hover Effects */
+        .hover-glow-border {
+            position: relative;
+        }
+        .hover-glow-border::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            border-radius: inherit;
+            background: linear-gradient(45deg, #0A6CFF, #38B6FF, #22C55E);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            filter: blur(8px);
+        }
+        .hover-glow-border:hover::before {
+            opacity: 0.6;
+        }
+
+        /* AI Grid Background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(10, 108, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(10, 108, 255, 0.05) 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        }
+
+        /* Typewriter Cursor */
+        .cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+            color: #0A6CFF;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Scroll Reveal Utility */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        /* Custom Button CTA */
+        .btn-cta {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-cta .text-default {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            display: inline-block;
+        }
+        .btn-cta .text-hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 150%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            white-space: nowrap;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-cta:hover .text-default {
+            transform: translateY(-150%);
+            opacity: 0;
+        }
+        .btn-cta:hover .text-hover {
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+        
+        /* Status Dot */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #22C55E;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #22C55E;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        /* Mouse Follow Light */
+        #light-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(10,108,255,0.08) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease;
+            mix-blend-mode: multiply;
+        }
+
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D7E9FF; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0A6CFF; 
+        }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-brand-blue selection:text-white">
+
+    <div id="light-cursor"></div>
+    
+    <!-- Background Fixed Elements -->
+    <div class="fixed inset-0 z-[-2] bg-brand-bg bg-mesh-light"></div>
+    <div class="fixed inset-0 z-[-1] bg-grid opacity-60"></div>
+    <canvas id="particle-canvas" class="fixed inset-0 z-[-1] opacity-50"></canvas>
+
+    <!-- Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold tracking-tighter flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white shadow-lg group-hover:shadow-brand-blue/30 transition-all">
+                    <i class="fa-solid fa-drone"></i>
+                </div>
+                <span class="text-slate-900 group-hover:text-brand-blue transition-colors">AeroVision<span class="text-brand-blue">.</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 items-center bg-white/50 backdrop-blur-md px-6 py-2 rounded-full border border-slate-200/50 shadow-sm">
+                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">Services</a>
+                <a href="#portfolio" class="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">Portfolio</a>
+                <a href="#workflow" class="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">Workflow</a>
+                <a href="#pricing" class="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">Pricing</a>
+            </nav>
+
+            <!-- CTA -->
+            <div class="hidden md:block">
+                <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" target="_blank" class="btn-cta inline-block bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:shadow-slate-900/20">
+                    <span class="text-default">立即預約諮詢</span>
+                    <span class="text-hover">
+                        <span class="status-dot"></span>
+                        Status: Ready to Connect
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-900 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center justify-center min-h-screen">
+        <!-- Floating Nodes Decoration -->
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl mix-blend-multiply animate-float"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-purple/20 rounded-full blur-3xl mix-blend-multiply animate-float-delayed"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <!-- Badge -->
+            <div class="reveal inline-flex items-center gap-2 px-3 py-1 rounded-full glass border border-brand-blue/20 text-brand-blue text-xs font-semibold uppercase tracking-wider mb-8">
+                <i class="fa-solid fa-certificate"></i> Premium Drone Solutions
+            </div>
+            
+            <!-- Headline -->
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1] text-slate-900 mb-6 drop-shadow-sm">
+                用專業空拍<br class="hidden md:block">
+                <span id="typewriter" class="text-gradient cursor"></span>
+            </h1>
+            
+            <!-- Subheadline -->
+            <p class="reveal reveal-delay-1 mt-6 text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-light">
+                透過專業空拍、無人機考照教學與高品質影像後製，協助企業、品牌與個人打造更具競爭力的商業影像。超越地心引力，重塑品牌視野。
+            </p>
+            
+            <!-- CTAs -->
+            <div class="reveal reveal-delay-2 mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" target="_blank" class="btn-cta group bg-brand-blue text-white px-8 py-4 rounded-full text-base font-semibold transition-all shadow-[0_0_40px_-10px_rgba(37,99,235,0.5)] hover:shadow-[0_0_60px_-15px_rgba(37,99,235,0.6)] w-full sm:w-auto">
+                    <span class="text-default">立即預約 <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i></span>
+                    <span class="text-hover">
+                        <span class="status-dot"></span>
+                        Status: Ready to Connect
+                    </span>
+                </a>
+                <a href="#services" class="group px-8 py-4 rounded-full text-base font-semibold text-slate-700 glass hover:bg-slate-50 transition-all border border-slate-200 hover:border-slate-300 w-full sm:w-auto">
+                    了解服務 <i class="fa-solid fa-play ml-2 text-xs text-brand-purple group-hover:scale-110 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="reveal reveal-delay-3 mt-20 pt-10 border-t border-slate-200/50">
+                <p class="text-xs text-slate-400 uppercase tracking-widest font-semibold mb-6">Trusted by Industry Leaders</p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <!-- Placeholder Logos using FontAwesome for Tech/Brand feel -->
+                    <i class="fa-brands fa-apple text-3xl hover:text-slate-900 transition-colors"></i>
+                    <i class="fa-brands fa-stripe text-3xl hover:text-[#635BFF] transition-colors"></i>
+                    <i class="fa-brands fa-aws text-3xl hover:text-[#FF9900] transition-colors"></i>
+                    <i class="fa-brands fa-figma text-3xl hover:text-[#F24E1E] transition-colors"></i>
+                    <i class="fa-brands fa-unity text-3xl hover:text-slate-900 transition-colors"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-32 relative bg-brand-slate/50 border-y border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Story Text -->
+                <div class="reveal order-2 lg:order-1">
+                    <h2 class="text-sm font-bold text-brand-purple tracking-widest uppercase mb-3">Brand Story</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight">
+                        視角決定高度，<br>專業定義價值。
+                    </h3>
+                    <div class="space-y-6 text-slate-600 text-lg font-light leading-relaxed">
+                        <p>
+                            在數位影像氾濫的時代，普通的視角已無法抓住目光。我們深信，<strong class="font-medium text-slate-900">真正的商業影像不僅是記錄，更是賦能</strong>。
+                        </p>
+                        <p>
+                            作為無人機整合解決方案專家，我們將航太級的操作精度（FAA Style）與極簡奢華的視覺美學（Minimal Luxury）結合。不論是震撼人心的企業空拍、嚴謹專業的考照培訓，還是好萊塢等級的影像後製，我們都以最高標準執行。
+                        </p>
+                        <p>
+                            這不僅是一次拍攝，而是為您的品牌注入科技與未來的DNA。我們協助您跨越技術門檻，讓每一次升空，都轉化為實質的商業影響力。
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10 grid grid-cols-2 gap-6">
+                        <div class="border-l-2 border-brand-blue pl-4">
+                            <div class="text-3xl font-black text-slate-900">500+</div>
+                            <div class="text-sm text-slate-500 mt-1">成功飛行任務</div>
+                        </div>
+                        <div class="border-l-2 border-brand-purple pl-4">
+                            <div class="text-3xl font-black text-slate-900">98%</div>
+                            <div class="text-sm text-slate-500 mt-1">考照通過率</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abstract Visual / Portrait Placeholder -->
+                <div class="reveal reveal-delay-2 order-1 lg:order-2 relative">
+                    <div class="aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden glass hover-glow-border p-2">
+                        <div class="w-full h-full rounded-2xl bg-slate-100 relative overflow-hidden flex items-center justify-center group">
+                            <!-- Simulated Image/Abstract 3D Shape -->
+                            <img src="https://placehold.co/800x600/2563EB/FFFFFF?text=Professional+Drone+Pilot" alt="Drone Expert" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0">
+                            <!-- Overlay UI elements -->
+                            <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl flex items-center justify-between transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white">
+                                        <i class="fa-solid fa-plane-up"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-bold text-slate-900">FAA Certified</div>
+                                        <div class="text-xs text-slate-500">Professional Pilot</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-check-circle text-brand-green text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="text-sm font-bold text-brand-blue tracking-widest uppercase mb-3">Premium Services</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">全方位影像整合解決方案</h3>
+                <p class="text-lg text-slate-500 font-light">模組化服務架構，從高空捕捉到精緻後製，提供企業級的端到端（End-to-End）影像支援。</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12">
+                <!-- Service 1: Aerial Cinematography -->
+                <div class="reveal glass-card rounded-3xl p-8 md:p-12 hover-glow-border relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-blue/10 transition-colors"></div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                        <div class="lg:col-span-3 flex flex-col items-start">
+                            <div class="w-16 h-16 rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center text-2xl mb-6 shadow-sm border border-brand-blue/20">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">商業空拍攝影</h4>
+                            <span class="text-xs font-semibold text-brand-blue bg-brand-blue/10 px-3 py-1 rounded-full">Aerial Cinematography</span>
+                        </div>
+                        
+                        <div class="lg:col-span-5 border-l-0 lg:border-l border-slate-200/60 lg:pl-8">
+                            <p class="text-slate-600 mb-6 leading-relaxed">
+                                打破空間限制，以電影級規格捕捉震撼畫面。適用於企業形象、大型建案、活動紀錄與戶外廣告，為品牌視覺注入磅礴氣勢。
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 4K / 8K 超高畫質錄影
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> FPV 穿越機動態運鏡
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 雙機作業與即時監看系統
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lg:col-span-4 flex flex-col justify-center bg-slate-50/50 rounded-2xl p-6 border border-slate-100">
+                            <h5 class="text-sm font-bold text-slate-900 mb-4">適合對象</h5>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">建設公司</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">影視製作</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">觀光品牌</span>
+                            </div>
+                            <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="text-sm font-semibold text-brand-blue hover:text-brand-purple transition-colors flex items-center group/link">
+                                規劃拍攝方案 <i class="fa-solid fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Professional Training -->
+                <div class="reveal reveal-delay-1 glass-card rounded-3xl p-8 md:p-12 hover-glow-border relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-purple/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-purple/10 transition-colors"></div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                        <div class="lg:col-span-3 flex flex-col items-start">
+                            <div class="w-16 h-16 rounded-2xl bg-brand-purple/10 text-brand-purple flex items-center justify-center text-2xl mb-6 shadow-sm border border-brand-purple/20">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">專業考照教學</h4>
+                            <span class="text-xs font-semibold text-brand-purple bg-brand-purple/10 px-3 py-1 rounded-full">Professional Training</span>
+                        </div>
+                        
+                        <div class="lg:col-span-5 border-l-0 lg:border-l border-slate-200/60 lg:pl-8">
+                            <p class="text-slate-600 mb-6 leading-relaxed">
+                                導入 FAA (美國聯邦航空總署) 級別的嚴謹訓練邏輯。從法規解析到實機操作，系統化培養具備安全意識與高超技術的專業飛手。
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 民航局專業操作證輔導
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 一對一教練級實機飛行
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 緊急狀況應變與安全維護
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lg:col-span-4 flex flex-col justify-center bg-slate-50/50 rounded-2xl p-6 border border-slate-100">
+                            <h5 class="text-sm font-bold text-slate-900 mb-4">適合對象</h5>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">企業內訓</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">職業攝影師</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">航拍愛好者</span>
+                            </div>
+                            <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="text-sm font-semibold text-brand-purple hover:text-brand-blue transition-colors flex items-center group/link">
+                                了解課程梯次 <i class="fa-solid fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Post-production -->
+                <div class="reveal reveal-delay-2 glass-card rounded-3xl p-8 md:p-12 hover-glow-border relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-slate-900/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-slate-900/10 transition-colors"></div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                        <div class="lg:col-span-3 flex flex-col items-start">
+                            <div class="w-16 h-16 rounded-2xl bg-slate-900/10 text-slate-900 flex items-center justify-center text-2xl mb-6 shadow-sm border border-slate-900/20">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">影像後製剪輯</h4>
+                            <span class="text-xs font-semibold text-slate-800 bg-slate-200 px-3 py-1 rounded-full">Post-Production</span>
+                        </div>
+                        
+                        <div class="lg:col-span-5 border-l-0 lg:border-l border-slate-200/60 lg:pl-8">
+                            <p class="text-slate-600 mb-6 leading-relaxed">
+                                賦予毛片生命力。結合精準剪輯節奏、電影級調色與動態特效，將零散的素材打造成具備極高商業轉換率的視覺作品。
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> DaVinci Resolve 電影級調色
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 商業廣告節奏剪輯
+                                </li>
+                                <li class="flex items-center text-sm text-slate-700 font-medium">
+                                    <i class="fa-solid fa-check text-brand-green mr-3"></i> 2D/3D 動態圖文與特效整合
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lg:col-span-4 flex flex-col justify-center bg-slate-50/50 rounded-2xl p-6 border border-slate-100">
+                            <h5 class="text-sm font-bold text-slate-900 mb-4">適合對象</h5>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">品牌行銷</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">YouTuber</span>
+                                <span class="text-xs bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600">廣告代理商</span>
+                            </div>
+                            <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="text-sm font-semibold text-slate-900 hover:text-brand-blue transition-colors flex items-center group/link">
+                                諮詢後製報價 <i class="fa-solid fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background accents for dark section -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+        <div class="absolute -top-40 right-0 w-96 h-96 bg-brand-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                <div class="max-w-2xl">
+                    <h2 class="text-sm font-bold text-brand-blue tracking-widest uppercase mb-3">Selected Works</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">精選實績案例</h3>
+                    <p class="text-slate-400 font-light text-lg">探索我們如何透過專業視角，為不同產業帶來突破性的視覺呈現。</p>
+                </div>
+                <a href="#" class="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-blue transition-colors border-b border-white/20 hover:border-brand-blue pb-1">
+                    View All Projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="reveal group relative aspect-[4/3] rounded-3xl overflow-hidden cursor-pointer bg-slate-800">
+                    <img src="https://placehold.co/1200x900/1e293b/FFFFFF?text=Urban+Architecture" alt="Project 1" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 transition-opacity duration-500"></div>
+                    
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex gap-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <span class="text-xs bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">DJI Inspire 3</span>
+                            <span class="text-xs bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">DaVinci</span>
+                        </div>
+                        <p class="text-brand-blue font-semibold text-sm mb-2">商業地產 / 形象影片</p>
+                        <h4 class="text-2xl md:text-3xl font-bold text-white mb-2">「雲端之城」信義區頂級商辦紀錄</h4>
+                        <p class="text-slate-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 line-clamp-2">
+                            透過高空環繞與精準的黃金時刻拍攝，完美呈現建築的幾何線條與現代化質感，協助建商提升30%的看屋預約率。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="reveal reveal-delay-1 group relative aspect-[4/3] rounded-3xl overflow-hidden cursor-pointer bg-slate-800">
+                    <img src="https://placehold.co/1200x900/1e293b/FFFFFF?text=Off-road+Rally" alt="Project 2" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 transition-opacity duration-500"></div>
+                    
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex gap-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <span class="text-xs bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">Custom FPV</span>
+                            <span class="text-xs bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">Premiere Pro</span>
+                        </div>
+                        <p class="text-brand-purple font-semibold text-sm mb-2">汽車品牌 / 動態廣告</p>
+                        <h4 class="text-2xl md:text-3xl font-bold text-white mb-2">越野拉力賽極限追車</h4>
+                        <p class="text-slate-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 line-clamp-2">
+                            使用特製穿越機進行零距離追蹤拍攝，呈現極致的速度感與張力，影片上線首週突破百萬觀看。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center md:hidden">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-white/10 px-6 py-3 rounded-full border border-white/20">
+                    View All Projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-24 md:py-32 bg-slate-50 relative border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="text-sm font-bold text-brand-blue tracking-widest uppercase mb-3">Workflow</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">標準化作業流程</h3>
+                <p class="text-lg text-slate-500 font-light">透明、高效、專業，確保每一個專案都能精準達成商業目標。</p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-200 -translate-y-1/2 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+                    
+                    <!-- Step 1 -->
+                    <div class="reveal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white border-[3px] border-slate-200 flex items-center justify-center text-xl text-slate-400 mb-6 shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors bg-clip-padding relative">
+                            <span class="absolute -top-2 -right-2 w-6 h-6 bg-slate-900 text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-white">1</span>
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">需求洽談</h4>
+                        <p class="text-sm text-slate-500">釐清目標與拍攝限制</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="reveal reveal-delay-1 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white border-[3px] border-slate-200 flex items-center justify-center text-xl text-slate-400 mb-6 shadow-sm hover:border-brand-purple hover:text-brand-purple transition-colors bg-clip-padding relative">
+                            <span class="absolute -top-2 -right-2 w-6 h-6 bg-slate-900 text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-white">2</span>
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">方案規劃</h4>
+                        <p class="text-sm text-slate-500">空域申請與分鏡腳本</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="reveal reveal-delay-2 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-brand-blue border-[3px] border-brand-blue/30 flex items-center justify-center text-xl text-white mb-6 shadow-lg shadow-brand-blue/20 bg-clip-padding relative">
+                            <span class="absolute -top-2 -right-2 w-6 h-6 bg-white text-brand-blue text-xs font-bold rounded-full flex items-center justify-center border-2 border-brand-blue">3</span>
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-brand-blue mb-2">拍攝執行</h4>
+                        <p class="text-sm text-slate-500">專業團隊實地高空作業</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="reveal reveal-delay-3 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white border-[3px] border-slate-200 flex items-center justify-center text-xl text-slate-400 mb-6 shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors bg-clip-padding relative">
+                            <span class="absolute -top-2 -right-2 w-6 h-6 bg-slate-900 text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-white">4</span>
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">後製剪輯</h4>
+                        <p class="text-sm text-slate-500">調色、特效與音效整合</p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="reveal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-full bg-white border-[3px] border-slate-200 flex items-center justify-center text-xl text-slate-400 mb-6 shadow-sm hover:border-brand-green hover:text-brand-green transition-colors bg-clip-padding relative">
+                            <span class="absolute -top-2 -right-2 w-6 h-6 bg-brand-green text-white text-xs font-bold rounded-full flex items-center justify-center border-2 border-white">5</span>
+                            <i class="fa-solid fa-flag-checkered"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">交付成果</h4>
+                        <p class="text-sm text-slate-500">高畫質母檔交付與長期合作</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="text-sm font-bold text-brand-purple tracking-widest uppercase mb-3">Transparent Pricing</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">投資您的品牌視覺</h3>
+                <p class="text-lg text-slate-500 font-light">清晰透明的收費模式，為不同規模的專案提供最具性價比的選擇。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+                
+                <!-- Starter Plan -->
+                <div class="reveal glass-card rounded-3xl p-8 border border-slate-200 hover:border-slate-300">
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Starter</h4>
+                    <p class="text-sm text-slate-500 mb-6 h-10">適合單一場景紀錄或小型企業形象素材。</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-slate-900">NT$ 15,000</span>
+                        <span class="text-slate-500 text-sm"> / 起</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 4小時單機空拍作業</li>
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 4K 原始素材交付</li>
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 基本空域申請代辦</li>
+                        <li class="flex items-start text-sm text-slate-400 line-through"><i class="fa-solid fa-xmark mt-1 mr-3"></i> 專業後製剪輯調色</li>
+                    </ul>
+                    <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="block w-full py-3 px-4 bg-white border border-slate-200 rounded-xl text-center font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition-all">選擇方案</a>
+                </div>
+
+                <!-- Professional Plan (Highlighted) -->
+                <div class="reveal reveal-delay-1 relative bg-slate-900 rounded-3xl p-8 md:scale-105 shadow-2xl shadow-brand-blue/20 border border-slate-800 z-10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-blue to-brand-purple opacity-30 blur-2xl rounded-full"></div>
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-blue to-brand-purple text-white text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-b-lg">Most Popular</div>
+                    
+                    <h4 class="text-xl font-bold text-white mb-2 mt-4">Professional</h4>
+                    <p class="text-sm text-slate-400 mb-6 h-10">適合商業廣告、建案宣傳或需要完整影片交付。</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-white">NT$ 35,000</span>
+                        <span class="text-slate-400 text-sm"> / 起</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start text-sm text-slate-200"><i class="fa-solid fa-check text-brand-green mt-1 mr-3"></i> 8小時雙機/FPV空拍作業</li>
+                        <li class="flex items-start text-sm text-slate-200"><i class="fa-solid fa-check text-brand-green mt-1 mr-3"></i> 4K/8K 劇院級畫質</li>
+                        <li class="flex items-start text-sm text-slate-200"><i class="fa-solid fa-check text-brand-green mt-1 mr-3"></i> 複雜空域申請與協調</li>
+                        <li class="flex items-start text-sm text-slate-200"><i class="fa-solid fa-check text-brand-green mt-1 mr-3"></i> 含 1 分鐘精華剪輯與調色</li>
+                    </ul>
+                    <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="block w-full py-3 px-4 bg-brand-blue rounded-xl text-center font-semibold text-white hover:bg-blue-600 transition-all shadow-lg hover:shadow-brand-blue/50">立即預約</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="reveal reveal-delay-2 glass-card rounded-3xl p-8 border border-slate-200 hover:border-slate-300">
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Enterprise</h4>
+                    <p class="text-sm text-slate-500 mb-6 h-10">大型專案、長期合約或客製化高端需求。</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-black text-slate-900">Custom</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 多日拍攝與跨國出機</li>
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 電影級重型無人機搭載</li>
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 專案專屬企劃與導演編制</li>
+                        <li class="flex items-start text-sm text-slate-700"><i class="fa-solid fa-check text-slate-400 mt-1 mr-3"></i> 高階 3D 動畫與特效合成</li>
+                    </ul>
+                    <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" class="block w-full py-3 px-4 bg-white border border-slate-200 rounded-xl text-center font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition-all">聯絡我們</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-brand-slate/50 border-y border-slate-200/50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-sm font-bold text-brand-blue tracking-widest uppercase mb-3">Testimonials</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">客戶真實評價</h3>
+            </div>
+
+            <!-- Masonry Grid for Reviews -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                
+                <!-- Review 1 -->
+                <div class="reveal break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"他們展現了極高的專業素養，不僅僅是把無人機飛上去，而是真正懂得分鏡與品牌想要傳達的質感。成品完全超越期待。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">C</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">陳總監</div>
+                            <div class="text-xs text-slate-500">知名建設公司 行銷部</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="reveal reveal-delay-1 break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"考照課程非常系統化！教練用 FAA 的標準要求細節，讓我順利一次考取民航局專業操作證，非常推薦給想要踏入職業領域的人。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">L</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">林先生</div>
+                            <div class="text-xs text-slate-500">獨立影像創作者</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="reveal reveal-delay-2 break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"FPV 的穿越機鏡頭太震撼了！為我們的汽車廣告帶來了前所未有的速度感。溝通順暢，交件準時，是很棒的合作夥伴。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">W</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">王製作</div>
+                            <div class="text-xs text-slate-500">廣告代理商</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Review 4 -->
+                 <div class="reveal break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"後製調色的功力一流。原本天氣不佳拍出來略顯平淡的素材，經過他們的巧手，瞬間變成了有電影質感的宣傳片。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">Z</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">張經理</div>
+                            <div class="text-xs text-slate-500">渡假飯店品牌</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="reveal reveal-delay-1 break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"在廠區進行複雜的室內外連貫飛行，技術要求極高，但團隊完美達成任務，且完全符合工安規範，令人安心。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">H</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">黃廠長</div>
+                            <div class="text-xs text-slate-500">科技製造業</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="reveal reveal-delay-2 break-inside-avoid glass-card p-6 rounded-2xl">
+                    <div class="flex items-center gap-1 text-brand-purple text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"從前期的法規申請到最終交件，一條龍的服務省去了我們非常多溝通成本。是未來專案的首選團隊。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">S</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">施企劃</div>
+                            <div class="text-xs text-slate-500">公關活動公司</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 relative">
+        <div class="max-w-3xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">常見問題 FAQ</h2>
+                <p class="text-slate-500">如果您有其他問題，歡迎直接預約諮詢。</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="reveal glass border border-slate-200 rounded-2xl overflow-hidden group">
+                    <button class="faq-btn w-full text-left px-6 py-5 font-semibold text-slate-900 flex justify-between items-center focus:outline-none">
+                        空拍需要申請路權或空域嗎？代辦費用怎麼算？
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/50">
+                        <div class="p-6 pt-0 text-sm text-slate-600 leading-relaxed">
+                            是的，依據台灣民航法規，多數紅黃區或特定活動範圍需提前申請。我們的 Professional 及 Enterprise 方案已包含基本的空域協調與申請代辦服務；若屬特殊限制區域（如機場周邊、軍事管制區邊緣），則需另行評估專案時程與規費。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="reveal reveal-delay-1 glass border border-slate-200 rounded-2xl overflow-hidden group">
+                    <button class="faq-btn w-full text-left px-6 py-5 font-semibold text-slate-900 flex justify-between items-center focus:outline-none">
+                        如果拍攝當天天候不佳怎麼辦？
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/50">
+                        <div class="p-6 pt-0 text-sm text-slate-600 leading-relaxed">
+                            安全為最高指導原則。我們會在拍攝前 48 小時密切監控氣象。若遇下雨、強風（超過法規限制）等不適合飛行的天氣，我們將免費提供一次延期拍攝的機會。具體細節會在合約中明訂保障雙方權益。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="reveal reveal-delay-2 glass border border-slate-200 rounded-2xl overflow-hidden group">
+                    <button class="faq-btn w-full text-left px-6 py-5 font-semibold text-slate-900 flex justify-between items-center focus:outline-none">
+                        無人機考照課程需要自備無人機嗎？
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/50">
+                        <div class="p-6 pt-0 text-sm text-slate-600 leading-relaxed">
+                            不需要。我們為學員準備了符合考照標準的多款無人機（包含 DJI Mavic 系列與 Phantom 系列）供上課與練習使用，以確保訓練品質與安全性。若您有自備設備，也可帶來由教練協助檢視設定。
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="reveal reveal-delay-3 glass border border-slate-200 rounded-2xl overflow-hidden group">
+                    <button class="faq-btn w-full text-left px-6 py-5 font-semibold text-slate-900 flex justify-between items-center focus:outline-none">
+                        交件時間通常需要多久？
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white/50">
+                        <div class="p-6 pt-0 text-sm text-slate-600 leading-relaxed">
+                            單純提供原始素材（Starter方案）通常在拍攝結束後 24-48 小時內即可透過雲端交付。若包含剪輯與調色（Professional方案以上），初剪版本約需 7-10 個工作天，並包含兩次免費修改額度。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心產品與技術解決方案 -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-12 reveal">
+                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-blue mb-4">核心產品與技術解決方案</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">專為企業量身打造的無人機任務能力</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">結合專業飛行、航管合規與智慧分析，為您提供具策略價值的空拍與任務執行服務。</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass-card rounded-3xl p-8 border border-slate-200 hover:border-brand-blue transition-all duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-brand-blue/10 text-brand-blue mb-6 text-2xl">
+                        <i class="fa-solid fa-drone"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">無人機空拍及任務執行</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">運用專業無人機設備，提供高品質空拍攝影與多元任務執行服務，包含工程巡檢、建築紀錄、土地測繪、活動紀錄、環境監測及客製化飛行任務。由合法合格飛手操作，依照任務需求規劃飛行路線，確保作業安全、影像品質與執行效率，協助企業及政府單位取得精準且具價值的空中數據。</p>
+                    <div class="pt-4">
+                        <a href="#" class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:text-brand-purple transition"><span>了解更多</span><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="glass-card rounded-3xl p-8 border border-slate-200 hover:border-brand-blue transition-all duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-brand-green/10 text-brand-green mb-6 text-2xl">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">智慧無人機：讓每一次飛行，都創造更高價值</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">整合專業飛行技術、航空法規與 AI 智慧分析，提供空拍、巡檢、測繪及客製化任務的一站式解決方案，協助企業提升效率，以科技驅動智慧決策。</p>
+                    <div class="pt-4">
+                        <a href="#" class="inline-flex items-center gap-2 text-brand-green font-semibold hover:text-brand-blue transition"><span>了解更多</span><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section class="py-32 relative overflow-hidden">
+        <!-- Background Mesh -->
+        <div class="absolute inset-0 bg-slate-900"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMnYtNGg0VjRoLTR6TTYgMzR2LTRIMHY0aDR2Mmgydi00em0wLTMwVjBIMHY0aDR2Mmgydi00eiIgZmlsbD0iIzMzM2Q0YyIgZmlsbC1vcGFjaXR5PSIwLjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
+        
+        <!-- Large Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-brand-blue/30 via-brand-purple/10 to-transparent rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">準備好提升您的品牌視角了嗎？</h2>
+            <p class="text-xl text-slate-400 font-light mb-12">立即預約 30 分鐘免費線上諮詢，讓我們為您量身打造專屬的影像解決方案。</p>
+            
+            <a href="https://calendar.app.google/xMeTfR74AFDyzh5T7" target="_blank" class="btn-cta group inline-block bg-white text-slate-900 px-10 py-5 rounded-full text-lg font-bold transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]">
+                <span class="text-default">立即預約諮詢 <i class="fa-solid fa-calendar-check ml-2"></i></span>
+                <span class="text-hover text-brand-blue">
+                    <span class="status-dot"></span>
+                    Status: Ready to Connect
+                </span>
+            </a>
+            <p class="mt-6 text-sm text-slate-500">無任何隱藏費用，完全依據您的需求進行客製化報價。</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-xl font-bold tracking-tighter flex items-center gap-2">
+                <div class="w-6 h-6 rounded-md bg-slate-900 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-drone text-xs"></i>
+                </div>
+                <span class="text-slate-900">AeroVision<span class="text-brand-blue">.</span></span>
+            </div>
+            
+            <div class="text-sm text-slate-500 font-light">
+                &copy; <span id="year"></span> AeroVision. All rights reserved.
+            </div>
+            
+            <div class="flex gap-4">
+                <a href="#" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue hover:bg-brand-blue/5 transition-all"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue hover:bg-brand-blue/5 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue hover:bg-brand-blue/5 transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            /* --- Typewriter Effect --- */
+            const texts = ["賦能企業影像新價值", "打造極致視覺衝擊", "跨越維度重新定義"];
+            let count = 0;
+            let index = 0;
+            let currentText = "";
+            let letter = "";
+            let isDeleting = false;
+            let typeSpeed = 150;
+
+            function type() {
+                if (count === texts.length) { count = 0; }
+                currentText = texts[count];
+
+                if (isDeleting) {
+                    letter = currentText.slice(0, --index);
+                    typeSpeed = 50;
+                } else {
+                    letter = currentText.slice(0, ++index);
+                    typeSpeed = 150;
+                }
+
+                document.getElementById('typewriter').textContent = letter;
+
+                if (!isDeleting && letter.length === currentText.length) {
+                    isDeleting = true;
+                    typeSpeed = 2000; // Pause at end
+                } else if (isDeleting && letter.length === 0) {
+                    isDeleting = false;
+                    count++;
+                    typeSpeed = 500; // Pause before new word
+                }
+                setTimeout(type, typeSpeed);
+            }
+            setTimeout(type, 1000); // Initial delay
+
+            /* --- Navbar Scroll Effect --- */
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-white/70', 'backdrop-blur-xl', 'border-slate-200/50', 'shadow-sm');
+                    navbar.classList.remove('border-transparent', 'py-4');
+                    navbar.classList.add('py-2');
+                } else {
+                    navbar.classList.remove('bg-white/70', 'backdrop-blur-xl', 'border-slate-200/50', 'shadow-sm', 'py-2');
+                    navbar.classList.add('border-transparent', 'py-4');
+                }
+            });
+
+            /* --- Scroll Reveal via Intersection Observer --- */
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Reveal only once
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            /* --- FAQ Accordion Logic --- */
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Close others
+                    faqButtons.forEach(otherBtn => {
+                        if (otherBtn !== this) {
+                            otherBtn.nextElementSibling.style.maxHeight = null;
+                            otherBtn.querySelector('i').style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle current
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+
+            /* --- Mouse Follow Light Effect --- */
+            const cursor = document.getElementById('light-cursor');
+            let mouseX = 0, mouseY = 0;
+            let cursorX = 0, cursorY = 0;
+
+            // Only enable on desktop
+            if (window.innerWidth > 768) {
+                document.addEventListener('mousemove', (e) => {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                });
+
+                function animateCursor() {
+                    // Smooth follow (easing)
+                    let dx = mouseX - cursorX;
+                    let dy = mouseY - cursorY;
+                    cursorX += dx * 0.1;
+                    cursorY += dy * 0.1;
+                    
+                    cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
+                    requestAnimationFrame(animateCursor);
+                }
+                animateCursor();
+            } else {
+                cursor.style.display = 'none';
+            }
+
+            /* --- Particle Canvas Background (Lightweight) --- */
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 2 + 0.1;
+                    this.speedX = Math.random() * 0.5 - 0.25;
+                    this.speedY = Math.random() * 0.5 - 0.25;
+                    this.opacity = Math.random() * 0.5;
+                }
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    if (this.size > 0.2) this.size -= 0.01;
+                    
+                    if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                }
+                draw() {
+                    ctx.fillStyle = `rgba(37, 99, 235, ${this.opacity})`;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particles = [];
+                // Fewer particles for cleaner look
+                for (let i = 0; i < 50; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+                }
+                requestAnimationFrame(animateParticles);
+            }
+
+            initParticles();
+            animateParticles();
+        });
+    </script>
+</body>
+</html>
